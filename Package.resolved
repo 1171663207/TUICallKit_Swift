@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "chat_sdk_swiftpm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Tencent-RTC/Chat_SDK_SwiftPM",
+      "state" : {
+        "revision" : "b7af8a5ffb915ff7e94ce21d8ab04884c8757f79",
+        "version" : "8.5.6864"
+      }
+    },
+    {
+      "identity" : "professional_swiftpm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Tencent-RTC/Professional_SwiftPM",
+      "state" : {
+        "revision" : "3727ae0299594960b1bab1af478d675252d684fe",
+        "version" : "12.5.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "tuicore_swiftpm_noah",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/1171663207/TUICore_SwiftPM_Noah",
+      "state" : {
+        "revision" : "7069ada93495c8da831c689965961462d3d8c8bd",
+        "version" : "1.0.8"
+      }
+    }
+  ],
+  "version" : 2
+}
