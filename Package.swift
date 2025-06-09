@@ -51,8 +51,7 @@ let package = Package(
                 .copy("PrivacyInfo.xcprivacy")
             ],
             swiftSettings: [
-                .define("USE_PROFESSIONAL"),
-                .unsafeFlags(["-fmodules"], .when(configuration: .release))
+                .define("USE_PROFESSIONAL")
             ]
         ),
         .testTarget(
