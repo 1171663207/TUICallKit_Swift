@@ -54,8 +54,6 @@ class TUICoreDefineConvert {
     
     static func getTUICallKitThemePath() -> String {
         guard var bundlePath = Bundle.module.resourceURL?.path else { return "" }
-        bundlePath = bundlePath + "/TUICallKitTheme.bundle"
-        print("Bundle 资源根路径: \(bundlePath)")
-        return bundlePath
+        return bundlePath + "/TUICallKitTheme.bundle"
     }
 }

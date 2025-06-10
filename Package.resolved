@@ -19,6 +19,24 @@
       }
     },
     {
+      "identity" : "rtcroomengine_swiftpm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/1171663207/RTCRoomEngine_SwiftPM",
+      "state" : {
+        "revision" : "fcc5008630de5268e77004b9a9752a9267d3ecfb",
+        "version" : "3.1.4"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "bd93ee4cb4d2c95fddc6328a5f45570afb255894",
+        "version" : "5.21.1"
+      }
+    },
+    {
       "identity" : "snapkit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SnapKit/SnapKit.git",
@@ -32,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/1171663207/TUICore_SwiftPM_Noah",
       "state" : {
-        "revision" : "7069ada93495c8da831c689965961462d3d8c8bd",
-        "version" : "1.0.8"
+        "revision" : "0e9ee58e9040c1a298f3e2dd0238f4687887461c",
+        "version" : "1.0.39"
       }
     }
   ],

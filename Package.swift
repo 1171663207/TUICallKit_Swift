@@ -14,33 +14,31 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/SnapKit/SnapKit.git", from: "5.0.0"),
         .package(url: "https://github.com/Tencent-RTC/Chat_SDK_SwiftPM", from: "8.3.6498"),
         .package(url: "https://github.com/Tencent-RTC/Professional_SwiftPM", from: "12.5.0"),
         .package(url: "https://github.com/1171663207/TUICore_SwiftPM_Noah", from: "1.0.0"),
+        .package(url: "https://github.com/1171663207/RTCRoomEngine_SwiftPM", from: "3.0.0"),
+        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.20.0"),
     ],
     targets: [
         .binaryTarget(
             name: "RTCCommon",
-            url: "https://liteav.sdk.qcloud.com/app/tuikit/download/customer/zhenxin/RTCCommon.xcframework.zip",
-            checksum: "3ea71a4bf1c372d5e33abe223a76f27b79ec948425071f0cdee367db07b51778"
-        ),
-        .binaryTarget(
-            name: "RTCRoomEngine",
-            url: "https://liteav.sdk.qcloud.com/app/tuikit/download/customer/zhenxin/RTCRoomEngine.xcframework.zip",
-            checksum: "094f773e4b6b757908d8d53c30d27a64cefb06a03a14e094b34d3eb5aabc72ce"
+            url: "https://sdk-liteav-1252463788.cos.ap-hongkong.myqcloud.com/app/tuikit/download/release/3.1/RTCCommon-1.3.0.zip",
+            checksum: "34a54148ed3c7b97185c5ab3b90676eff38c4b2a4f54fdd39dd3cb53e94ca9e3"
         ),
         .target(name:"HookObjc",path:"Sources/HookObjc"),
         .target(
             name: "TUICallKit_Swift",
             dependencies: [
                 "RTCCommon",
-                "RTCRoomEngine",
                 "HookObjc",
                 .product(name: "SnapKit", package: "SnapKit"),
                 .product(name: "Chat_SDK_SwiftPM", package: "Chat_SDK_SwiftPM"),
                 .product(name: "Professional_SwiftPM", package: "Professional_SwiftPM"),
-                .product(name: "TUICore_SwiftPM", package: "TUICore_SwiftPM_Noah")
+                .product(name: "RoomEngine", package: "RTCRoomEngine_SwiftPM"),
+                .product(name: "TUICore_SwiftPM", package: "TUICore_SwiftPM_Noah"),
+                .product(name: "SDWebImage", package: "SDWebImage")
             ],
             resources: [
                 .process("Resources/**"),
